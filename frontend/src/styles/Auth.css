@@ -1,0 +1,73 @@
+#auth-container {
+    display: flex;
+    width: 100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+form {
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 2rem 5rem;
+    border-radius: .5rem;
+
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, .2);
+    transition: .3s;
+}
+
+form >  h1 {
+    margin: 0;
+}
+
+form > h3 {
+    margin: 0 0 1rem 0;
+    font-weight: 600;
+}
+
+
+form>label {
+    width: calc(70% + 2rem);
+    font-size: 1.1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+}
+
+form input {
+    border: 1px solid black;
+    border-radius: .2rem;
+    outline: none;
+
+    height: 2rem;
+    width: 100%;
+
+    padding: .1rem 1rem;
+    box-sizing: border-box;
+}
+
+form>button {
+    width: 25%;
+    height: 2rem;
+    padding: 0 .5rem;
+}
+
+form>p>span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+form .error {
+    color: rgb(247, 78, 78);
+}
+
+form .error > span {
+    font-size: .8rem;
+} */

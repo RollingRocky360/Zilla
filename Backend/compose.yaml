@@ -1,0 +1,8 @@
+services:
+  goserver:
+    build: .
+    container_name: goserver
+    ports:
+      - 3000:3000
+    environment:
+      - DB_URI="host=postgres-container user=postgres password=postgres dbname=postgres port=5432 sslmode=disable"

@@ -1,0 +1,60 @@
+#projects {
+    width: 100%;
+    height: 100%;
+    padding: 0 3rem;
+    box-sizing: border-box;
+}
+
+#project-list {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem .5rem;
+    overflow-y: auto;
+}
+
+.project {
+    padding: 2rem;
+    min-width: fit-content;
+    box-shadow: 0 0 10px 1px #00000030;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: .3rem;
+    user-select: none;
+    transition: .1s;
+}
+.project:active {
+    background-color: #00000005;
+}
+.project:hover {
+    box-shadow: 0 0 20px 1px #00D26A70;
+}
+.project p {
+    margin: 0;
+}
+.project-title {
+    font-size: 1.5rem;
+}
+
+.project-description {
+    font-size: .8rem;
+}
+
+.lead {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.project-lead-pfp {
+    aspect-ratio: 1;
+    width: 2rem;
+    display: grid;
+    place-items: center;
+    background-color: #00D26A;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 50%;
+}

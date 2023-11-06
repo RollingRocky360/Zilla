@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  goserver:
+    build: ./Backend
+    container_name: goserver
+    environment:
+      CONTAINER: true
+      JWT_SECRET: UOKL63iBGAoy7GjhujlDzA
+      POSTGRES_USER: gagan
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: zilla
+    ports:
+      - "4000:4000"
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres:alpine
+    container_name: db
+    environment:
+      PGUSER: gagan
+      POSTGRES_USER: gagan
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: zilla
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d zilla"]
+      interval: 10s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+  proxy:
+    build: ./Webserver
+    container_name: proxy
+    ports: 
+      - "80:80"
+    depends_on:
+      - goserver
+      - db
+    
+volumes:
+  postgres-db:
+    driver: local
+    

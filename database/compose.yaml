@@ -1,0 +1,17 @@
+version: '3'
+services:
+  postgres:
+    build: .
+    restart: on-failure
+    container_name: postgres-container
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: gagan
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: zilla
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+volumes:
+  pg-data:
+    driver: local
