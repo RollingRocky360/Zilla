@@ -1,5 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/M4NvrXuV)
-
 ### Name: Gagan Sai C S <br> Email: gagansai2010795@ssn.edu.in
 
 ### Live Link: https://zilla-software.onrender.com <br>  May be very slow as its deployed on a free service that spins down on inactivity
