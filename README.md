@@ -1,7 +1,3 @@
-### Name: Gagan Sai C S <br> Email: gagansai2010795@ssn.edu.in
-
-### Live Link: https://zilla-software.onrender.com <br>  May be very slow as its deployed on a free service that spins down on inactivity
-
 ## Project Structure
 - Backend
 - Database
