@@ -24,7 +24,7 @@ func InitDatabase() {
 	}
 
 	dsn := fmt.Sprintf(
-		"host=%s user=%s password=%s dbname=%s port=5432 sslmode=disable",
+		"host=%s user=%s password=%s dbname=%s port=5432 sslmode=enable",
 		host,
 		os.Getenv("POSTGRES_USER"),
 		os.Getenv("POSTGRES_PASSWORD"),
